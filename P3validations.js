@@ -10,6 +10,7 @@ describe('PSCpageobjects', function() {
 		
     it("Should verify the error message when cart total is over $999.99", function() {
         var EC = protractor.ExpectedConditions;
+        browser.waitForAngularEnabled(false);
 
         browser.sleep(8000);
     
@@ -117,6 +118,7 @@ browser.sleep(5000);
 
     it("Should verify the error message when transaction is below $5.00", function() {
         var EC = protractor.ExpectedConditions;
+        browser.waitForAngularEnabled(false);
 
 
         browser.sleep(8000);
@@ -184,6 +186,7 @@ browser.sleep(5000);
     it("Should verify the successful transaction with new card " , function() {
         var EC = protractor.ExpectedConditions;
 
+        browser.waitForAngularEnabled(false);
 
         browser.sleep(8000);
 
@@ -214,11 +217,11 @@ browser.sleep(5000);
         
     });
     obj.clickonselect.click().then(function(){
-      browser.sleep(4000);
+      browser.sleep(8000);
     });
 
     obj.paymentmethoddropdown.click().then(function(){
-      browser.sleep(5000);
+      browser.sleep(8000);
       
   });
   obj.newcard.click().then(function(){
@@ -278,7 +281,7 @@ obj.cancel.click().then(function(){
   browser.sleep(15000);
 });
 obj.paymentmethod.click().then(function(){
-  browser.sleep(15000);
+  browser.sleep(8000);
 });
 
 expect(obj.newcardname.getText()).toContain(data.cardnickname)
@@ -299,7 +302,11 @@ expect(obj.newcardname.getText()).toContain(data.cardnickname)
 using(d.Datadrivend, function (data, description) {
 		
   it("Should verify the error message - Sharing is not allowed on this patrons account" , function() {
+
+    browser.sleep(8000);
+
       var EC = protractor.ExpectedConditions;
+      browser.waitForAngularEnabled(false);
 
       browser.ignoreSynchronization = true;
 
@@ -398,6 +405,7 @@ using(d.Datadrivenfund, function (data, description) {
 
   it("Should verify the error message - The source and target students do not belong to the same family." , function() {
       var EC = protractor.ExpectedConditions;
+      browser.waitForAngularEnabled(false);
 
 browser.refresh();
 

@@ -7,7 +7,8 @@ describe('PSCpageobjects', function() {
 
   using(d.Datadrivend, function (data, description) {
     it("Should add a meal item to cart", function() {
-  
+      browser.waitForAngularEnabled(false);
+
       browser.sleep(5000);
 
         var EC = protractor.ExpectedConditions;

@@ -22,7 +22,8 @@ using(d.Datadrivene, function (data, description) {
     it("Registration page validation", function() {
 
 
-    	  
+      browser.waitForAngularEnabled(false);
+
 			obj.register.click().then(function(){
 				browser.sleep(1000);
 			 
@@ -124,6 +125,7 @@ using(d.Datadrivene, function (data, description) {
 
         using(d.Datadrivenregister, function (data, description) {
 	it("Registraction page validation - User already exists", function() {
+    browser.waitForAngularEnabled(false);
 
         obj.newemail.clear().then(function(){
             browser.sleep(4000);
@@ -203,6 +205,9 @@ using(d.Datadrivene, function (data, description) {
  //forgot password - invalid email
  using(d.Datadrivenm, function (data, description) {
     it("Forgot password page valdiations", function() {
+
+      browser.waitForAngularEnabled(false);
+
       browser.sleep(6000);
 
 	 browser.refresh();
@@ -264,7 +269,8 @@ using(d.Datadrivene, function (data, description) {
 
 using(d.Datadrivenvalidation, function (data, description) {
     it("Login page validations", function() {
-  
+      browser.waitForAngularEnabled(false);
+
            
       browser.refresh();
    
@@ -284,7 +290,7 @@ using(d.Datadrivenvalidation, function (data, description) {
       });
      
       
-      expect(obj.r2.getText()).toBe(data.r2);
+      expect(obj.r3.getText()).toBe(data.r3);
       obj.r2.getText().then(function(text){
         console.log(text);
         browser.sleep(1000);
@@ -386,13 +392,17 @@ using(d.Datadrivenvalidation, function (data, description) {
 using(d.Datadrivennewcard, function (data, description) {
 
   it("Messages section validation", function() {
+
+    browser.waitForAngularEnabled(false);
+
       var EC = protractor.ExpectedConditions;
+      browser.sleep(4000);
 
 
      
 browser.refresh();
 
-      browser.sleep(4000);
+      browser.sleep(8000);
 	  obj.email.sendKeys(data.email1);
 	  obj.password.sendKeys(data.password1);
 	obj.login.click().then(function(){
@@ -436,7 +446,8 @@ using(d.Datadrivennewcard, function (data, description) {
       var EC = protractor.ExpectedConditions;
 
 
-  
+      browser.waitForAngularEnabled(false);
+
 
       obj.notification.click().then(function(){
         browser.sleep(5000);
@@ -589,7 +600,8 @@ using(d.Datadrivennewcard, function (data, description) {
 
                   using(d.Datadrivena, function (data, description) {
                       it("Secure account page validations", function() {
-                            
+                        browser.waitForAngularEnabled(false);
+   
                       obj.secure.click().then(function(){
                         browser.sleep(6000);
                         }); 
@@ -683,6 +695,7 @@ using(d.Datadrivennewcard, function (data, description) {
  using(d.Datadrivenb, function (data, description) {
 	it("Add student page validations", function() {
         var EC = protractor.ExpectedConditions;
+        browser.waitForAngularEnabled(false);
 
       
         browser.sleep(8000);
@@ -791,6 +804,7 @@ using(d.Datadrivennewcard, function (data, description) {
 
       it("Payment method page validations" , function() {
           var EC = protractor.ExpectedConditions;
+          browser.waitForAngularEnabled(false);
 
           browser.refresh();
             

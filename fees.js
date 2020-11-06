@@ -10,7 +10,8 @@ describe('PSCpageobjects', function() {
   using(d.Datadrivend, function (data, description) {
     it("Should verify the functionality of Scheduled fees", function() {
   
-     
+      browser.waitForAngularEnabled(false);
+
         var EC = protractor.ExpectedConditions;
 
         browser.sleep(8000);
@@ -58,7 +59,8 @@ describe('PSCpageobjects', function() {
     using(d.Datadrivend, function (data, description) {
         it("Should display no fees for inactive patrons", function() {
       
-         
+          browser.waitForAngularEnabled(false);
+
             var EC = protractor.ExpectedConditions;
     
             browser.ignoreSynchronization = true;
