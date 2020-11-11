@@ -69,7 +69,7 @@ describe('PSCpageobjects', function() {
 
     },200000);
 });
-
+/*
 using(d.Datadrivenmail, function (data, description) {
   it("Should verify the successfully transaction for meal item", function() {
 //it('TS-'+description, function() {
@@ -116,7 +116,7 @@ using(d.Datadrivenmail, function (data, description) {
     },250000);
 
 
-      });
+      });*/
     });
 
 
