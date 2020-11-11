@@ -23,10 +23,10 @@ describe('PSCpageobjects', function() {
       });
       
     
-        obj.cancel.click().then(function(){
+      /*  obj.cancel.click().then(function(){
             browser.sleep(8000);
           
-            });
+            });*/
           
       
       
