@@ -23,15 +23,15 @@ describe('PSCpageobjects', function() {
       });
       
     
-      /*  obj.cancel.click().then(function(){
+        obj.cancel.click().then(function(){
             browser.sleep(8000);
           
-            });*/
+            });
           
       
       
         
-        obj.addcart.click().then(function(){
+        obj.addcart1.click().then(function(){
           browser.sleep(8000);
           
       });
