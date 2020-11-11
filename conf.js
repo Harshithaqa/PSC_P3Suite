@@ -11,10 +11,10 @@ exports.config = {
 // seleniumAddress: 'http://localhost:4444/wd/hub',
  //direct connect
 
-//specs: ['P3.js'],
+specs: ['email.js'],
 
 
- specs: ['P3.js','P3validations.js','fees.js','email.js'],
+ //specs: ['P3.js','P3validations.js','fees.js','email.js'],
 
  chromeDriver : './node_modules/webdriver-manager/SeleniumSoftware/chromedriver.exe',
  seleniumServerJar: './node_modules/webdriver-manager/SeleniumSoftware/selenium-server-standalone-3.141.59.jar',
