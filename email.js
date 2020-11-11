@@ -31,7 +31,7 @@ describe('PSCpageobjects', function() {
       
       
         
-        obj.addcart1.click().then(function(){
+        obj.addcart.click().then(function(){
           browser.sleep(8000);
           
       });
